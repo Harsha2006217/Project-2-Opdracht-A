@@ -1,0 +1,42 @@
+@startsalt wireframe_infographic2
+title Wireframe infographic-website beroepsrol CSC - Harsha Kanaparthi, sprint 2
+{+
+  {/ <b>Cyber Security & Cloud Engineer</b> | Harsha Kanaparthi, HBO-ICT Open-ICT }
+  {/ [blok 1-2] | [blok 3-4] | [blok 5-6] | [blok 7-8] }
+  {
+    {T
+      +
+      **Blok 1 Job titles**
+      DCC-reservist, security engineer, cloud security engineer, SOC-analist
+      ..
+      **Blok 2 Most wanted skills**
+      Azure | Python | PowerShell | KQL | Defender en Sentinel
+      (elke term met uitleg tussen haakjes)
+      ..
+      **Blok 3 Skills roadmap**
+      netwerken en Linux, dan cloud en scripting, dan monitoring
+      ..
+      **Blok 4 Wat maak je dan?**
+      beveiligde login-flow, IAM, patches, backups, monitoring
+    }
+    |
+    {T
+      +
+      **Blok 5 Een week in het leven**
+      situational awareness uit mijn DCC-interview
+      maximaal 3 hoofdpunten per blok
+      ..
+      **Blok 6 Baby roadmap 0-2 jaar**
+      Security Essentials, Azure AI Essentials, Ubuntu Linux, Arista
+      ..
+      **Blok 7 Kat of hond via security-bril**
+      login-page classifier, bias-check, AVG-check
+      ..
+      **Blok 8 Wildcard ethiek bias privacy AVG**
+      yogahoudingen als overig, HyGear en LockBit 5.0, DA-lek
+    }
+  }
+  { [Bronnen blok 1 en 2] | [Bronnen blok 3 en 4] | [Bronnen blok 5 en 6] | [Bronnen blok 7 en 8] }
+  { (Terug naar boven) }
+}
+@endsalt

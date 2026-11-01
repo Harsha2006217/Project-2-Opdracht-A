@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" font-family="DejaVu Sans, Arial, sans-serif">
+  <!-- Schets infographic beroepsrol Cyber Security & Cloud Engineer, Harsha Kanaparthi, sprint 2 -->
+  <rect x="0" y="0" width="1200" height="1100" fill="#f6f8fb"/>
+  <!-- browserrand: de infographic wordt een website -->
+  <rect x="30" y="24" width="1140" height="960" rx="14" fill="#ffffff" stroke="#123a5c" stroke-width="3"/>
+  <circle cx="62" cy="52" r="7" fill="#e0604f"/><circle cx="86" cy="52" r="7" fill="#e8b53a"/><circle cx="110" cy="52" r="7" fill="#5cb85c"/>
+  <rect x="140" y="40" width="700" height="26" rx="13" fill="#eef2f7" stroke="#9fb2c4"/>
+  <text x="156" y="58" font-size="14" fill="#5b6b7c">harsha-kanaparthi.nl/beroepsrol-csc  (responsive website, geen poster)</text>
+  <!-- header + navigatie -->
+  <rect x="52" y="82" width="1096" height="86" rx="8" fill="#123a5c"/>
+  <text x="72" y="116" font-size="22" fill="#ffffff" font-weight="bold">Cyber Security &amp; Cloud Engineer</text>
+  <text x="72" y="146" font-size="14" fill="#cfe3f2">Harsha Kanaparthi - HBO-ICT Open-ICT - sprint 2, september 2026</text>
+  <g font-size="13" fill="#123a5c">
+    <rect x="812" y="100" width="52" height="24" rx="12" fill="#eef2f7"/><text x="822" y="116">1-2</text>
+    <rect x="872" y="100" width="52" height="24" rx="12" fill="#eef2f7"/><text x="882" y="116">3-4</text>
+    <rect x="932" y="100" width="52" height="24" rx="12" fill="#eef2f7"/><text x="942" y="116">5-6</text>
+    <rect x="992" y="100" width="52" height="24" rx="12" fill="#eef2f7"/><text x="1002" y="116">7-8</text>
+    <text x="812" y="152" font-size="12" fill="#5b6b7c">anker-navigatie: klapt om op mobiel</text>
+  </g>
+  <!-- acht blokken in een raster dat omvouwt: 2 kolommen op desktop, 1 op mobiel -->
+  <g stroke="#1f6f9e" stroke-width="2" fill="#ffffff">
+    <rect x="52" y="184" width="538" height="170" rx="8"/>
+    <rect x="610" y="184" width="538" height="170" rx="8"/>
+    <rect x="52" y="370" width="538" height="170" rx="8"/>
+    <rect x="610" y="370" width="538" height="170" rx="8"/>
+    <rect x="52" y="556" width="538" height="170" rx="8"/>
+    <rect x="610" y="556" width="538" height="170" rx="8"/>
+    <rect x="52" y="742" width="538" height="170" rx="8"/>
+    <rect x="610" y="742" width="538" height="170" rx="8"/>
+  </g>
+  <g font-size="15" fill="#123a5c" font-weight="bold">
+    <text x="70" y="212">1 Job titles</text>
+    <text x="628" y="212">2 Most wanted skills</text>
+    <text x="70" y="398">3 Skills roadmap</text>
+    <text x="628" y="398">4 Wat maak je dan?</text>
+    <text x="70" y="584">5 Een week in het leven</text>
+    <text x="628" y="584">6 Baby roadmap 0-2 jaar</text>
+    <text x="70" y="770">7 Kat of hond, security-bril</text>
+    <text x="628" y="770">8 Wildcard: ethiek, bias, privacy, AVG</text>
+  </g>
+  <g font-size="12.5" fill="#41556b">
+    <text x="70" y="238">DCC-reservist, security engineer,</text>
+    <text x="70" y="258">cloud security engineer, SOC-analist</text>
+    <text x="70" y="278">bron: 3 vacatures sept 2026 + interview</text>
+    <text x="628" y="238">Azure, Python, PowerShell, KQL,</text>
+    <text x="628" y="258">Defender/Sentinel; jargon met uitleg</text>
+    <text x="628" y="278">tussen haakjes (ontwikkeldoel)</text>
+    <text x="70" y="424">netwerken/Linux &gt; cloud/scripting &gt;</text>
+    <text x="70" y="444">monitoring/incident-response</text>
+    <text x="70" y="464">bron: LEF-beroepsrollenkaart</text>
+    <text x="628" y="424">beveiligde login-flow, IAM, patches,</text>
+    <text x="628" y="444">backups; voorbeeld: Flink-lek 09-2026</text>
+    <text x="628" y="464">via gestolen inloggegevens</text>
+    <text x="70" y="610">situational awareness uit DCC-interview;</text>
+    <text x="70" y="630">max 3 hoofdpunten per blok (feedback)</text>
+    <text x="70" y="650">theorie uitklapbaar, niet op de voorgrond</text>
+    <text x="628" y="610">mijn echte certificaten: Security</text>
+    <text x="628" y="630">Essentials, Azure AI Essentials, Ubuntu</text>
+    <text x="628" y="650">Linux, Network Automation (Arista)</text>
+    <text x="70" y="796">kat-of-hond-model via mijn rol: login-</text>
+    <text x="70" y="816">page classifier, bias-check, AVG-check</text>
+    <text x="70" y="836">bron: eigen testverslag T1-T6</text>
+    <text x="628" y="796">yogahoudingen en bloemen als "overig":</text>
+    <text x="628" y="816">bias in datasets; HyGear/LockBit 5.0 en</text>
+    <text x="628" y="836">DA-lek als privacy-voorbeelden</text>
+  </g>
+  <!-- voetnoot + notities -->
+  <rect x="52" y="928" width="1096" height="40" rx="8" fill="#eef2f7" stroke="#9fb2c4"/>
+  <text x="70" y="953" font-size="12.5" fill="#41556b">Voet: bronnen per blok uitklapbaar (details-element) - citaten alleen uit eigen transcripten of bronnen met datum</text>
+  <g font-size="12.5" fill="#8a3f2f">
+    <text x="52" y="1010" font-weight="bold">Schetsnotities voor het bouwen (niet onderdeel van de pagina zelf):</text>
+    <text x="52" y="1032">notitie 1: grid met auto-fit, dus 2 kolommen op breed scherm en 1 kolom op smal scherm</text>
+    <text x="52" y="1052">notitie 2: lettergroottes in rem, zodat zoom tot 200 procent leesbaar blijft</text>
+    <text x="52" y="1072">notitie 3: geen horizontale scrollbar op 390 en 320 px (gemeten met screenshot, geen overflow)</text>
+  </g>
+  <path d="M 300 994 q 40 -14 90 -10" fill="none" stroke="#8a3f2f" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>

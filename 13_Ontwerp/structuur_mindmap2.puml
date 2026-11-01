@@ -1,0 +1,41 @@
+@startmindmap structuur_mindmap2
+title Structuur infographic-website en bewijsmappen - sprint 2
+* Infographic CSC
+** website2
+*** index.html
+**** header met titel en anker-navigatie
+**** main.raster met 8 secties blok1 tot blok8
+**** footer met bronvermelding
+**** top-button voor terug naar boven
+*** css/style.css
+**** css-variabelen voor kleur en witruimte
+**** grid met auto-fit voor 2 of 1 kolom
+**** media queries bij 48 en 24 rem
+**** lettergroottes in rem voor zoom tot 200 procent
+*** js/script.js
+**** top-button tonen na scrollen
+**** glad scrollen naar ankers
+*** img/avatar.svg
+** inhoud per blok
+*** blok 1 job titles uit vacatures en DCC-interview
+*** blok 2 skills uit 3 vacatures september 2026
+*** blok 3 roadmap uit LEF-beroepsrollenkaart
+*** blok 4 producten met nieuws uit de sprintweken
+*** blok 5 week in het leven uit DCC-interview
+*** blok 6 baby roadmap met mijn eigen certificaten
+*** blok 7 kat of hond via security-bril met testverslag
+*** blok 8 wildcard ethiek bias privacy AVG
+** bewijsmappen in de zip
+*** 00 algemeen met logboek feedback onderzoek testverslag
+*** 01 tot 10 bewijs per LEF-vaardigheid met bijlagen
+*** 11 infographic website compleet
+*** 12 screenshots desktop tablet mobiel zoom en bewijsplaatjes
+*** 13 ontwerp schets en plantuml
+** bronnen
+*** eigen DCC-interview CyberSec Nederland
+*** ZZP-interview via tribe-lid Bart met naamsvermelding
+*** 3 vacatures met datum en niveau
+*** nieuws september 2026 met datum
+*** eigen testnotities T1 tot T6 en Liner.ai-screenshots
+*** feedbackcitaten van 24 september uit mijn post-it-foto
+@endmindmap

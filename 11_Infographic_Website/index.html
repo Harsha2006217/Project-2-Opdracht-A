@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     INFOGRAPHIC BEROEPSROL CYBER SECURITY & CLOUD ENGINEER
+     Project 2, onderdeel A + B - Harsha Kanaparthi
+     Sprint 2, week 38-39 (14 t/m 25 september 2026)
+
+     Waarom een website als infographic? De opdracht zegt:
+     "Papier, Miro, Word, Figma, een zelf gekluste website - it's your call."
+     Ik kies bewust voor een eigen website omdat ik die in project 1
+     heb leren bouwen en omdat een website op elk scherm leesbaar is.
+
+     De acht blokken volgen het voorbeeld uit de opdracht:
+     1 job titles, 2 most wanted skills, 3 skills roadmap,
+     4 producten, 5 week in het leven, 6 baby roadmap,
+     7 mijn beroepsrolopdracht, 8 wildcard ethiek en privacy.
+     ============================================================ -->
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Infographic beroepsrol Cyber Security & Cloud Engineer van Harsha Kanaparthi, HBO-ICT project 2.">
+  <title>Infographic beroepsrol | Cyber Security & Cloud Engineer | Harsha Kanaparthi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="img/avatar.svg">
+</head>
+<body>
+  <a class="skip-link" href="#blok1">Meteen naar de infographic</a>
+
+  <!-- Kop met mijn naam, de rol en het niveau, zoals in het voorbeeld -->
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="banner-icoon" aria-hidden="true">
+        <!-- Eigen SVG-icoon: schild met slot, symbool voor de rol -->
+        <svg viewBox="0 0 48 48" role="img" aria-label="Schild met slot">
+          <path d="M24 4 L40 10 V24 C40 34 33 41 24 44 C15 41 8 34 8 24 V10 Z"
+                fill="none" stroke="#ffffff" stroke-width="3"/>
+          <rect x="18" y="22" width="12" height="10" rx="2" fill="#ffffff"/>
+          <path d="M20 22 v-3 a4 4 0 0 1 8 0 v3" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Beroepsrol [Cyber Security &amp; Cloud Engineer]</h1>
+        <p class="banner-sub">HBO-ICT &bull; Cyber Security &amp; Cloud Engineer &bull; Onderzoek en ervaring uit project 2</p>
+      </div>
+      <div class="banner-badges">
+        <span class="badge badge-oranje">HBO-ICT</span>
+        <span class="badge">Level: Bachelor / HBO</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="raster" id="blok1">
+
+    <!-- BLOK 1: welke functietitels hoor je bij deze rol -->
+    <section class="blok blok-paars" aria-labelledby="k1">
+      <h2 id="k1"><span class="cijfer">1</span> Job titles</h2>
+      <ul class="vink-lijst">
+        <li>Cyber Security Engineer</li>
+        <li>Cloud Security Engineer</li>
+        <li>Security Analyst / SOC Analyst</li>
+        <li>DevSecOps Engineer</li>
+        <li>Cyber Reservist (Defensie Cyber Commando)</li>
+      </ul>
+      <p class="bron">Bron: vacatures Base Cyber Security (09-09-2026), IT-Idiots (27-08-2026), Flexspot (2026) en mijn interview met een DCC-reservist.</p>
+    </section>
+
+    <!-- BLOK 2: wat vragen werkgevers echt -->
+    <section class="blok blok-blauw" aria-labelledby="k2">
+      <h2 id="k2"><span class="cijfer">2</span> Most wanted skills</h2>
+      <ul class="punten-lijst">
+        <li>Cloud: Microsoft Azure, AWS of GCP (Sentinel, Defender, Logic Apps).</li>
+        <li>Scripting: Python en PowerShell, plus KQL voor log-analyse.</li>
+        <li>Netwerken: TCP/IP, DNS, DHCP en monitoring van verkeer.</li>
+        <li>Blue team: alerting, patching, incident-response en automatisering.</li>
+        <li>Certificaten: Microsoft Security, CISSP of CISM (vaak "bij voorkeur").</li>
+        <li>Soft skills: ownership, teamspirit en adviesvaardigheden.</li>
+      </ul>
+      <p class="bron">Bron: drie vacatures op hbo/senior-niveau, september 2026; zie onderzoeksverslag stap 2.</p>
+    </section>
+
+    <!-- BLOK 3: de route naar de rol -->
+    <section class="blok blok-groen" aria-labelledby="k3">
+      <h2 id="k3"><span class="cijfer">3</span> Skills roadmap</h2>
+      <ol class="stappen-lijst">
+        <li>Python, Linux en netwerk-basis</li>
+        <li>Windows Server en IAM-basis</li>
+        <li>Azure of AWS en scripting</li>
+        <li>Monitoring, KQL en blue team</li>
+        <li>Productie: hiring bij een security-team</li>
+      </ol>
+      <p class="bron">Bron: LEF-beroepsrolkaart CSC, de volgorde uit de vacatures en het advies van de DCC-reservist: "zo breed mogelijk, de specialisatie komt vanzelf".</p>
+    </section>
+
+    <!-- BLOK 4: wat maakt deze rol eigenlijk -->
+    <section class="blok blok-oranje" aria-labelledby="k4">
+      <h2 id="k4"><span class="cijfer">4</span> Wat maak je dan?</h2>
+      <ul class="punten-lijst">
+        <li>Beveiligd cloudplatform met IAM-model en monitoring (Azure Sentinel).</li>
+        <li>Geautomatiseerde controles en pipelines (DevOps, Azure CLI, Bicep).</li>
+        <li>Incident-rapportages en dreigingsanalyses voor een organisatie.</li>
+        <li>Beveiligde login-flow: mijn eigen voorbeeld uit de presentatie van sprint 2.</li>
+      </ul>
+      <p class="bron">Bron: vacature IT-Idiots (multi-cloud monitoring, IAM, automation) en mijn presentatie op 24 september 2026.</p>
+    </section>
+
+    <!-- BLOK 5: een gewone werkweek -->
+    <section class="blok blok-rood" aria-labelledby="k5">
+      <h2 id="k5"><span class="cijfer">5</span> Wat doe je? Een week in het leven</h2>
+      <ul class="week-lijst">
+        <li><strong>ma:</strong> stand-up, alerts van de nacht nalopen, prioriteren</li>
+        <li><strong>di:</strong> monitoringregelen en KQL-queries bijwerken</li>
+        <li><strong>wo:</strong> patching en automatisering (Python/PowerShell)</li>
+        <li><strong>do:</strong> incident-oefening of dreigingsanalyse met het team</li>
+        <li><strong>vr:</strong> rapportage, stakeholder-overleg en kennis delen</li>
+      </ul>
+      <p class="bron">Bron: interview DCC-reservist (oefeningen met tijdsdruk, situational awareness) en de agile-werkwijze uit de vacatures; als reservist komen daar oefeningen en AMO/IRO-training bij.</p>
+    </section>
+
+    <!-- BLOK 6: mijn eigen eerste twee jaar -->
+    <section class="blok blok-turkoois" aria-labelledby="k6">
+      <h2 id="k6"><span class="cijfer">6</span> Baby roadmap, junior 0-2 jaar</h2>
+      <ol class="punten-lijst">
+        <li>Mbo-4 Software Development afgerond (2026): programmeren, Git, testen.</li>
+        <li>HBO-ICT propedeuse: sprints, LEF-vaardigheden en teamwerk.</li>
+        <li>Certificaten die ik al heb: Microsoft Security Essentials, Azure AI Essentials, Ubuntu Linux, Network Automation (Arista).</li>
+        <li>Volgende stap: Azure-security-pad (oriëntatie op AZ-500) en een stage in een security-team.</li>
+        <li>Netwerk: conferenties en meetups, advies van de ZZP'er: "je moet gewoon heel veel doen, dan houd je je kennis bij".</li>
+      </ol>
+      <p class="bron">Bron: mijn eigen cv, mijn certificaten en interview 2 (tribe-lid Bart met een open-infrastructuur ZZP'er, 10-09-2026).</p>
+    </section>
+
+    <!-- BLOK 7: mijn beroepsrolopdracht in project 2 -->
+    <section class="blok blok-paars" aria-labelledby="k7">
+      <h2 id="k7"><span class="cijfer">7</span> Mijn beroepsrolopdracht: kat of hond, vanuit security bekeken</h2>
+      <ul class="punten-lijst">
+        <li>Squadproduct: beeldclassificatiemodel kat / hond / overig in Liner.ai (EfficientNet, validatie-accuracy 100 procent).</li>
+        <li>Mijn Jira-taken: AI-2 data controleren en labelen (12 wazige en 8 dubbele afbeeldingen eruit) en AI-8 verbeter het model.</li>
+        <li>Mijn security-bril: data-integriteit als eerste controle, alleen licentievrije afbeeldingen zonder persoonsgegevens, en confidence eerlijk rapporteren.</li>
+        <li>Resultaat van mijn verbetering: confidence op "overig" van ongeveer 90 naar ongeveer 98 procent, hybride tests van 60/35 naar 99/99.</li>
+      </ul>
+      <p class="bron">Bron: Jira-bord space AI, Liner.ai-trainingsscherm en ons testverslag; zie testverslag_ai_model.pdf.</p>
+    </section>
+
+    <!-- BLOK 8: ethiek, bias, privacy, AVG -->
+    <section class="blok blok-groen" aria-labelledby="k8">
+      <h2 id="k8"><span class="cijfer">8</span> Wildcard: ethiek &bull; bias &bull; privacy &bull; AVG</h2>
+      <ul class="punten-lijst">
+        <li>Bias: onze "overig"-klasse bestond uit yogahoudingen en bloemen; daardoor herkent het model huis-tuin-en-keuken-objecten minder goed. Dit heb ik als waarneming in het testverslag gezet.</li>
+        <li>Privacy: geen persoonsgegevens in de dataset en geen cookies op deze pagina.</li>
+        <li>Transparantie: confidence percentages altijd erbij vermelden, ook wanneer het model onzeker is (50/50 bij twee dieren in één foto).</li>
+        <li>AVG: mijn wildcard-experiment met phishing-loginpagina's gebruikt alleen zelf gemaakte screenshots, geen echte klantgegevens.</li>
+      </ul>
+      <p class="bron">Bron: eigen testverslag en de wildcard user story van sprint 2.</p>
+    </section>
+  </main>
+
+  <footer class="voet">
+    <p>
+      HBO-ICT | Cyber Security &amp; Cloud Engineer | onderzoek sprint 2 (14 t/m 25 september 2026) |
+      Harsha Kanaparthi, squad met Giovanni en Nick. Bronnen: LEF-beroepsrollen, drie vacatures (september 2026),
+      dreigingsnieuws september 2026 (HyGear/LockBit 5.0, datalekken Flink en DA), interview DCC-reservist
+      (CyberSec Nederland, Utrecht), tribe-interview open infrastructuur (10-09-2026, afgenomen door tribe-lid Bart).
+    </p>
+  </footer>
+
+  <button id="top-button" class="top-button" aria-label="Terug naar boven">&uarr;</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

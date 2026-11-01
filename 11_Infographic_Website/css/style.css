@@ -1,0 +1,211 @@
+/* ============================================================
+   STIJLBLAD INFOGRAPHIC BEROEPSROL - PROJECT 2
+   Harsha Kanaparthi, sprint 2 (week 38-39, september 2026)
+
+   Opbouw:
+   1. Basis: kleuren per blok, lettertype, rem-maten
+   2. Banner bovenaan met titel en badges
+   3. Het raster met de acht blokken (grid)
+   4. Lijsten en bronregels binnen de blokken
+   5. Footer en terug-naar-boven-knop
+   6. Media queries voor tablet en mobiel (user story responsive)
+
+   Net als in project 1 werk ik met rem-maten en max-width in ch,
+   zodat de infographic ook bij 200 procent zoom leesbaar blijft.
+   ============================================================ */
+
+/* ---------- 1. BASIS ---------- */
+:root {
+  --achtergrond: #eef3f8;
+  --tekst: #1c2b3a;
+  --wit: #ffffff;
+  --paars: #7c4dd4;
+  --blauw: #17a8d8;
+  --groen: #21b573;
+  --oranje: #f57c1f;
+  --rood: #e8465a;
+  --turkoois: #14b8a6;
+  --donker: #123a5c;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 100%; scroll-behavior: smooth; }
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: var(--achtergrond);
+  color: var(--tekst);
+  line-height: 1.55;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 0.2rem solid var(--donker);
+  outline-offset: 0.15rem;
+}
+
+.skip-link { position: absolute; left: -999rem; }
+.skip-link:focus {
+  left: 0.5rem; top: 0.5rem; background: var(--wit);
+  padding: 0.4rem 0.7rem; border: 0.1rem solid var(--donker); z-index: 20;
+}
+
+/* ---------- 2. BANNER ---------- */
+.banner {
+  background: linear-gradient(100deg, #12a5d8, #0d84b8);
+  color: var(--wit);
+  padding: 1.4rem 1rem;
+}
+
+.banner-inner {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner-icoon { width: 3.6rem; height: 3.6rem; flex: 0 0 auto; }
+.banner-icoon svg { width: 100%; height: 100%; }
+
+.banner h1 { font-size: clamp(1.5rem, 3vw + 0.8rem, 2.4rem); line-height: 1.15; }
+
+.banner-sub { margin-top: 0.3rem; color: #eaf7fd; max-width: 46rem; }
+
+.banner-badges { margin-left: auto; display: flex; flex-direction: column; gap: 0.4rem; }
+
+.badge {
+  border: 0.12rem solid var(--wit);
+  border-radius: 1rem;
+  padding: 0.15rem 0.8rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.badge-oranje { background: var(--oranje); border-color: var(--oranje); font-weight: bold; }
+
+/* ---------- 3. RASTER MET DE ACHT BLOKKEN ---------- */
+/* Grid met automatische kolommen: op breed scherm twee kolommen,
+   op smal scherm gaat het vanzelf naar één kolom (auto-fit). */
+.raster {
+  max-width: 70rem;
+  margin: 1.4rem auto;
+  padding: 0 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.1rem;
+}
+
+.blok {
+  background: var(--wit);
+  border-radius: 0.6rem;
+  border-left: 0.5rem solid var(--donker);
+  padding: 1.1rem 1.1rem 0.9rem 1.1rem;
+  box-shadow: 0 0.1rem 0.35rem rgba(18, 42, 60, 0.15);
+}
+
+/* Elke blok-eigen kleur aan de linkerrand en bij het cijfer,
+   zodat de acht onderdelen visueel uit elkaar houden */
+.blok-paars   { border-left-color: var(--paars); }
+.blok-blauw   { border-left-color: var(--blauw); }
+.blok-groen   { border-left-color: var(--groen); }
+.blok-oranje  { border-left-color: var(--oranje); }
+.blok-rood    { border-left-color: var(--rood); }
+.blok-turkoois{ border-left-color: var(--turkoois); }
+
+.blok h2 {
+  font-size: 1.25rem;
+  color: var(--donker);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cijfer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem; height: 1.7rem;
+  border-radius: 50%;
+  background: var(--donker);
+  color: var(--wit);
+  font-size: 1rem;
+  flex: 0 0 auto;
+}
+
+.blok-paars .cijfer    { background: var(--paars); }
+.blok-blauw .cijfer    { background: var(--blauw); }
+.blok-groen .cijfer    { background: var(--groen); }
+.blok-oranje .cijfer   { background: var(--oranje); }
+.blok-rood .cijfer     { background: var(--rood); }
+.blok-turkoois .cijfer { background: var(--turkoois); }
+
+/* ---------- 4. LIJSTEN EN BRONREGELS ---------- */
+.punten-lijst, .vink-lijst, .week-lijst, .stappen-lijst {
+  margin: 0 0 0.7rem 1.1rem;
+}
+
+.punten-lijst li, .week-lijst li, .stappen-lijst li { margin-bottom: 0.35rem; max-width: 58ch; }
+
+/* Vinkjes in plaats van bolletjes, zoals in het voorbeeld */
+.vink-lijst { list-style: none; margin-left: 0.2rem; }
+.vink-lijst li { margin-bottom: 0.35rem; padding-left: 1.5rem; position: relative; max-width: 58ch; }
+.vink-lijst li::before {
+  content: "\2713";           /* vink-teken */
+  position: absolute;
+  left: 0;
+  color: var(--paars);
+  font-weight: bold;
+}
+
+.stappen-lijst li::marker { color: var(--groen); font-weight: bold; }
+.week-lijst { list-style: none; margin-left: 0.2rem; }
+.week-lijst li { margin-bottom: 0.35rem; max-width: 58ch; }
+
+.bron {
+  font-size: 0.8rem;
+  color: #55677c;
+  border-top: 0.08rem dashed #b9c6d4;
+  padding-top: 0.45rem;
+  max-width: 62ch;
+}
+
+/* ---------- 5. FOOTER EN TOPKNOP ---------- */
+.voet {
+  background: var(--donker);
+  color: #dbe7f2;
+  padding: 1rem;
+  margin-top: 1.4rem;
+  font-size: 0.85rem;
+}
+
+.voet p { max-width: 70rem; margin: 0 auto; }
+
+.top-button {
+  position: fixed;
+  right: 1rem; bottom: 1rem;
+  width: 2.8rem; height: 2.8rem;
+  border: none; border-radius: 50%;
+  background: var(--donker); color: var(--wit);
+  font-size: 1.2rem; cursor: pointer;
+  opacity: 0; visibility: hidden;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.top-button.zichtbaar { opacity: 1; visibility: visible; }
+
+/* ---------- 6. MEDIA QUERIES ---------- */
+/* Tablet: badges onder de titel i.p.v. ernaast */
+@media (max-width: 48rem) {
+  .banner-badges { margin-left: 0; flex-direction: row; width: 100%; }
+  .raster { grid-template-columns: 1fr; }
+}
+
+/* Heel smal scherm: iets kleinere basisletter zodat alles past
+   zonder horizontale scrollbar */
+@media (max-width: 24rem) {
+  html { font-size: 92%; }
+  .banner h1 { font-size: 1.35rem; }
+}
